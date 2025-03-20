@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   },
   description:
     'Join the community building the user-owned future of AI. NEAR AI is focused on creating privacy-preserving, open-source AI that benefits users, not corporations.',
+  openGraph: {
+    images: [{ url: `${env.NEXT_PUBLIC_BASE_URL}/images/social.jpg` }],
+  },
   twitter: {
     card: 'summary_large_image',
     images: [{ url: `${env.NEXT_PUBLIC_BASE_URL}/images/social.jpg` }],
