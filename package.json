@@ -1,0 +1,42 @@
+{
+  "name": "nearai-marketing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "format": "prettier --check ./src",
+    "format:fix": "prettier --write ./src",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix --max-warnings 0",
+    "lint:strict": "next lint --max-warnings 0",
+    "pre-commit": "pnpm run ts:check && pnpm run lint:fix && pnpm run format:fix",
+    "start": "next start",
+    "ts:check": "tsc --noEmit --incremental"
+  },
+  "dependencies": {
+    "@nearai/ui": "^1.0.1",
+    "@phosphor-icons/react": "^2.1.7",
+    "@t3-oss/env-nextjs": "^0.12.0",
+    "date-fns": "^4.1.0",
+    "next": "15.2.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sass": "^1.86.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@next/eslint-plugin-next": "^15.2.3",
+    "@svgr/webpack": "^8.1.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.3",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "prettier": "^3.5.3",
+    "typescript": "^5"
+  }
+}
