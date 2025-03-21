@@ -6,9 +6,6 @@ type Props = {
   author: string;
 };
 
-const foo = 'asdf';
-console.log(foo);
-
 export const BlockQuote = ({ quote, author }: Props) => {
   return (
     <Card background="sand-1">
