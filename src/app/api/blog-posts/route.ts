@@ -6,7 +6,6 @@ import { blogPosts } from '@/data/blog-posts';
 
 export function GET() {
   return NextResponse.json({
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     posts: blogPosts.map(({ content, ...post }) => post),
   });
 }
