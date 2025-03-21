@@ -48,6 +48,7 @@
   },
   "lint-staged": {
     "./src/**/*.{ts,tsx}": [
+      "bash -c 'npm run ts:check'",
       "eslint --fix --max-warnings 0"
     ],
     "./src/**/*": [
